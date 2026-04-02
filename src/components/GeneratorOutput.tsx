@@ -54,7 +54,7 @@ export function GeneratorOutput({
           )}
         </>
       ) : liveValid.length === 0 ? (
-        <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-950 dark:bg-[#0d1117] shadow-sm min-h-[400px] lg:min-h-[630px] flex flex-col overflow-hidden relative group">
+        <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-950 dark:bg-[#0d1117] shadow-sm min-h-[400px] lg:min-h-[645px] flex flex-col overflow-hidden relative group">
           <div className="flex items-center gap-2 px-4 py-3 border-b border-white/5 bg-white/5">
      	    <div className="flex gap-1.5 shrink-0">
               <span className="h-3 w-3 rounded-full bg-slate-700/50 dark:bg-slate-800" />

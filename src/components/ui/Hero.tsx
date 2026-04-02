@@ -72,8 +72,8 @@ export function Hero() {
             style={{ fontFeatureSettings: '"ss01"' }}
           >
             <RiDownloadLine className="hidden sm:block size-4" />
-            <span className="hidden sm:block">Create Rules Free</span>
-            <span className="sm:hidden">Get Link for Desktop</span>
+            <span className="">Create Rules Free</span>
+            {/* <span className="sm:hidden">Get Link for Desktop</span> */}
           </Button>
           <Button
             variant="secondary"
