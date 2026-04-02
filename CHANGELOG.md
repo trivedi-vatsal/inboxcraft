@@ -1,5 +1,27 @@
 # inboxcraft
 
+## 1.0.4 - Apr 2, 2026
+
+### Minor Changes
+
+- SEO meta tag modernization, contribution guidelines, and PR automation.
+
+  ### SEO & Meta Tags
+
+  - **Domain migration** — all primary and social meta tags updated from `trivedi-vatsal.github.io/InboxCraft/` to the new `inboxcraft.app` domain.
+  - **Meta description optimization** — rewritten for better conversion and SEO: "Stop manually creating Outlook rules. Paste your sender list and instantly generate a safe, private PowerShell script to automate your inbox organization in seconds."
+  - **Fixed image paths** — Open Graph and Twitter images now use absolute URLs pointing to `https://inboxcraft.app/og-image.png` for reliable social sharing previews.
+  - **Canonical normalization** — updated the canonical link to `https://inboxcraft.app/`.
+
+  ### Developer Experience
+
+  - **Contribution guidelines** — added `CONTRIBUTING.md` covering local setup, branching strategy, and `changeset` requirements for all new contributors.
+  - **PR Template** — added `.github/PULL_REQUEST_TEMPLATE.md` to standardize PR descriptions, verification steps, and screenshot attachments.
+
+  ### Agent Workflows
+
+  - **Automated Open PR** — added a high-automation workflow in `.agents/workflows/open-pr.md`. This allows Antigravity to handle the entire PR lifecycle (branching, staging, pushing, and PR creation) via the GitHub CLI.
+
 ## 1.0.3 - Apr 2, 2026
 
 ### Minor Changes

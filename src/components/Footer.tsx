@@ -171,7 +171,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="hover:text-[#533afd] transition-colors"
             >
-              v1.0.3
+              v1.0.4
             </a>
             {' · '}
             <a
