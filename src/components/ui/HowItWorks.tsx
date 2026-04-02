@@ -4,7 +4,7 @@ import { HOW_IT_WORKS } from "@/components/home/HomeData"
 
 export function HowItWorks() {
   return (
-    <section className="relative py-20 sm:py-32 px-4 sm:px-8 bg-[#1c1e54] overflow-hidden transition-colors">
+    <section className="relative py-14 sm:py-20 px-4 sm:px-8 bg-[#1c1e54] overflow-hidden transition-colors">
 
       {/* ── Background decorations ── */}
       <div className="absolute inset-0 pointer-events-none select-none" aria-hidden>
@@ -24,7 +24,7 @@ export function HowItWorks() {
       </div>
 
       <div className="relative mx-auto max-w-6xl">
-        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-12 pb-6 border-b border-white/10">
+        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-8 pb-5 border-b border-white/10">
           <div>
             <h2
               className="text-[2rem] font-[300] text-white leading-[1.10]"

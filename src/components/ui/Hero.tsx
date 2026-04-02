@@ -53,7 +53,7 @@ export function Hero() {
         >
           Paste sender addresses, choose how to organise them, and InboxCraft
           generates a PowerShell script that creates folders and rules
-          automatically — in seconds.
+          automatically in seconds.
         </p>
 
         {/* CTA buttons */}

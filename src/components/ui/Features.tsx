@@ -6,7 +6,7 @@ export function Features() {
   return (
     <section
       aria-labelledby="features-title"
-      className="mx-auto mt-32 w-full max-w-6xl px-4 sm:px-8"
+      className="mx-auto mt-16 w-full max-w-6xl px-4 sm:px-8 pb-10"
     >
       <div className="flex flex-col items-start">
         <Badge variant="success">Zero Setup Required</Badge>
@@ -19,14 +19,14 @@ export function Features() {
         </h2>
       </div>
       <p
-        className="mt-6 max-w-3xl text-[18px] font-[300] leading-[1.40] text-[#64748d] dark:text-slate-400"
+        className="mt-4 max-w-3xl text-[18px] font-[300] leading-[1.40] text-[#64748d] dark:text-slate-400"
         style={{ fontFeatureSettings: '"ss01"' }}
       >
         InboxCraft generates idempotent PowerShell scripts that work natively with
         Outlook COM and Exchange Online — no cloud, no accounts, and no data
         sent anywhere. Local script execution means guaranteed privacy.
       </p>
-      <dl className="mt-16 grid grid-cols-1 gap-y-12 md:grid-cols-3 md:border-y md:border-[#e5edf5] md:py-16 dark:md:border-slate-800">
+      <dl className="mt-10 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:border-y md:border-[#e5edf5] md:py-10 dark:md:border-slate-800">
         {FEATURES.map((stat, index) => (
           <React.Fragment key={index}>
             <div className="border-l-2 border-[#b9b9f9] pl-6 md:border-l md:text-center lg:border-[#e5edf5] lg:first:border-none dark:border-[#533afd]/30 lg:dark:border-slate-800 transition-colors">

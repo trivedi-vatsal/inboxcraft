@@ -36,7 +36,7 @@ interface EmailInputProps {
   onReset: () => void
 }
 
-const inputCls = 'block w-full rounded-[4px] border border-[#e5edf5] dark:border-slate-800 bg-white dark:bg-slate-900/50 px-3 py-2 text-[14px] font-[300] text-[#061b31] dark:text-slate-100 placeholder-[#64748d] dark:placeholder-slate-500 transition focus:border-[#533afd] dark:focus:border-[#533afd] focus:bg-white dark:focus:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-[rgba(83,58,253,0.1)] dark:focus:ring-[rgba(83,58,253,0.2)]'
+const inputCls = 'block w-full rounded-[4px] border border-[#e5edf5] dark:border-slate-600 bg-white dark:bg-slate-900 px-3 py-2 text-[14px] font-[300] text-[#061b31] dark:text-slate-100 placeholder-[#64748d] dark:placeholder-slate-500 transition focus:border-[#533afd] dark:focus:border-[#533afd] focus:bg-white dark:focus:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-[rgba(83,58,253,0.1)] dark:focus:ring-[rgba(83,58,253,0.2)]'
 
 export function EmailInput({
   mode, onModeChange,
@@ -60,10 +60,10 @@ export function EmailInput({
     /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/.test(quickSenderEmail.trim())
 
   return (
-    <div className="rounded-[6px] bg-white dark:bg-slate-900/40 border border-[#e5edf5] dark:border-slate-800 shadow-[rgba(23,23,23,0.08)_0px_15px_35px_0px] overflow-hidden">
+    <div className="rounded-[6px] bg-white dark:bg-slate-800 border border-[#e5edf5] dark:border-slate-700 shadow-[rgba(23,23,23,0.08)_0px_15px_35px_0px] overflow-hidden">
 
       {/* Mode toggle */}
-      <div className="flex items-center px-6 py-3 border-b border-slate-100 dark:border-slate-800/50">
+      <div className="flex items-center px-6 py-3 border-b border-slate-100 dark:border-slate-700/50">
         <div className="flex rounded-[4px] border border-[#e5edf5] dark:border-slate-700 overflow-hidden text-[12px] font-[400]">
           <button
             type="button"
@@ -91,7 +91,7 @@ export function EmailInput({
       {mode === 'quick' ? (
         <div className="px-6 pt-5 pb-5 space-y-4">
           <div className="space-y-1.5">
-            <label htmlFor="quick-user-email" className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-400">
+            <label htmlFor="quick-user-email" className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-300">
               Your M365 Email
             </label>
             <input
@@ -102,11 +102,11 @@ export function EmailInput({
               placeholder="you@company.com"
               className={inputCls}
             />
-            <p className="text-xs text-slate-400 dark:text-slate-500">Required for correct folder paths in the script.</p>
+            <p className="text-xs text-slate-400 dark:text-slate-400">Required for correct folder paths in the script.</p>
           </div>
 
           <div className="space-y-1.5">
-            <label htmlFor="quick-sender-email" className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-400">
+            <label htmlFor="quick-sender-email" className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-300">
               Sender Email
             </label>
             <input
@@ -118,10 +118,10 @@ export function EmailInput({
               className={inputCls}
               onKeyDown={(e) => { if (e.key === 'Enter' && quickValid) onQuickDownload() }}
             />
-            <p className="text-xs text-slate-400 dark:text-slate-500">The address you want to create a rule for.</p>
+            <p className="text-xs text-slate-400 dark:text-slate-400">The address you want to create a rule for.</p>
           </div>
 
-          <div className="flex items-center gap-2 flex-wrap text-[11px] text-slate-400 dark:text-slate-500">
+          <div className="flex items-center gap-2 flex-wrap text-[11px] text-slate-400 dark:text-slate-400">
             <span>📂 Inbox subfolder</span>
             <span className="text-slate-300 dark:text-slate-600">·</span>
             <span>📋 Copy</span>
@@ -133,7 +133,7 @@ export function EmailInput({
         <div className="px-6 pt-5 pb-5 space-y-5">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-1.5">
-              <label htmlFor="user-email" className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-400">
+              <label htmlFor="user-email" className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-300">
                 Your M365 Email
               </label>
               <input
@@ -144,11 +144,11 @@ export function EmailInput({
                 placeholder="you@company.com"
                 className={inputCls}
               />
-              <p className="text-xs text-slate-400 dark:text-slate-500">Leave blank to auto-detect.</p>
+              <p className="text-xs text-slate-400 dark:text-slate-400">Leave blank to auto-detect.</p>
             </div>
 
             <div className="space-y-1.5">
-              <label htmlFor="parent-folder" className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-400">
+              <label htmlFor="parent-folder" className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-300">
                 Parent Folder
               </label>
               <input
@@ -157,22 +157,22 @@ export function EmailInput({
                 value={parentFolder}
                 onChange={(e) => onParentFolderChange(e.target.value)}
                 placeholder="team"
-                className={`block w-full rounded-[4px] border bg-white dark:bg-slate-900/50 px-3 py-2 text-[14px] font-[300] text-[#061b31] dark:text-slate-100 placeholder-[#64748d] dark:placeholder-slate-500 transition focus:bg-white dark:focus:bg-slate-900 focus:outline-none focus:ring-2 ${
+                className={`block w-full rounded-[4px] border bg-white dark:bg-slate-900 px-3 py-2 text-[14px] font-[300] text-[#061b31] dark:text-slate-100 placeholder-[#64748d] dark:placeholder-slate-500 transition focus:bg-white dark:focus:bg-slate-900 focus:outline-none focus:ring-2 ${
                   folderError
                     ? 'border-[#ea2261] dark:border-red-500 focus:border-[#ea2261] dark:focus:border-red-500 focus:ring-[rgba(234,34,97,0.1)] dark:focus:ring-red-900/30'
-                    : 'border-[#e5edf5] dark:border-slate-800 focus:border-[#533afd] dark:focus:border-[#533afd] focus:ring-[rgba(83,58,253,0.1)] dark:focus:ring-[rgba(83,58,253,0.2)]'
+                    : 'border-[#e5edf5] dark:border-slate-600 focus:border-[#533afd] dark:focus:border-[#533afd] focus:ring-[rgba(83,58,253,0.1)] dark:focus:ring-[rgba(83,58,253,0.2)]'
                 }`}
               />
               {folderError
                 ? <p className="text-xs text-red-500 dark:text-red-400">{folderError}</p>
-                : <p className="text-xs text-slate-400 dark:text-slate-500">Alias folders are nested inside this.</p>
+                : <p className="text-xs text-slate-400 dark:text-slate-400">Alias folders are nested inside this.</p>
               }
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-1.5">
-              <p className="text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-400">Rule Action</p>
+              <p className="text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-300">Rule Action</p>
               <div className="flex rounded-[4px] border border-[#e5edf5] dark:border-slate-700 overflow-hidden text-[12px] font-[400]">
                 {(['copy', 'move'] as RuleAction[]).map((v) => (
                   <button
@@ -189,7 +189,7 @@ export function EmailInput({
             </div>
 
             <div className="space-y-1.5">
-              <p className="text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-400">Match Type</p>
+              <p className="text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-300">Match Type</p>
               <div className="flex rounded-[4px] border border-[#e5edf5] dark:border-slate-700 overflow-hidden text-[12px] font-[400]">
                 <button
                   onClick={() => onConditionTypeChange('senderEmail')}
@@ -213,7 +213,7 @@ export function EmailInput({
 
           <div className="space-y-1.5">
             <div className="flex items-center justify-between">
-              <label htmlFor="email-input" className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-400">
+              <label htmlFor="email-input" className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-300">
                 Sender Addresses
               </label>
               <div className="flex items-center gap-3">
@@ -272,7 +272,7 @@ export function EmailInput({
       )}
 
       {/* Footer */}
-      <div className="flex items-center justify-between border-t border-[#e5edf5] dark:border-slate-800/50 bg-[#fafbfc] dark:bg-slate-900/50 px-4 sm:px-6 py-4 gap-3">
+      <div className="flex items-center justify-between border-t border-[#e5edf5] dark:border-slate-700/50 bg-[#fafbfc] dark:bg-slate-800/80 px-4 sm:px-6 py-4 gap-3">
         <button
           type="button"
           onClick={onReset}

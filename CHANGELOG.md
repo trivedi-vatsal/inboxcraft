@@ -1,5 +1,22 @@
 # inboxcraft
 
+## 1.0.2 - Apr 2, 2026
+
+### Patch Changes
+
+- Typography consistency, homepage spacing pass, and dark mode form contrast fixes.
+
+  ### Fixed
+
+  - **Inner page banner fonts** — `AdvancedPage`, `TemplatesPage`, `ChangelogPage`, and `PrivacyPolicyPage` hero headings were using `font-extrabold` with gradient `bg-clip-text` text. All updated to `font-[300]`, solid `text-[#061b31]` (deep navy), `letterSpacing: '-0.96px'`, and `fontFeatureSettings: '"ss01"'` to match the design system and the homepage hero.
+  - **QuickGenerator dark mode contrast** — `QuickGeneratorCard` card changed from semi-transparent `dark:bg-slate-900/40` to solid `dark:bg-slate-800`; inputs changed from `dark:bg-slate-900/50` to solid `dark:bg-slate-900`; borders tightened to `dark:border-slate-600/700`; labels bumped from `dark:text-slate-400` to `dark:text-slate-300`.
+  - **Advanced page dark mode contrast** — same contrast fixes applied to `EmailInput`, `Textarea`, and the footer bar (`dark:bg-slate-800/80`). The contrast chain across both form surfaces is now: page `slate-950` → card `slate-800` → inputs `slate-900` with `slate-600` borders.
+
+  ### Changed
+
+  - **Homepage section spacing** — reduced top/bottom padding and internal margins across `Features`, `QuickGenerator`, `HowItWorks`, and `CTA` sections to make the page feel more compact and reduce excessive whitespace between sections.
+  - **CHANGELOG brand naming** — replaced remaining "Stripe" brand name references in the 1.0.0 entry with neutral language (`Brand Purple`, `brand's deep navy`, `brand purple`, `brand.*` palette).
+
 ## 1.0.1 - Apr 2, 2026
 
 ### Patch Changes

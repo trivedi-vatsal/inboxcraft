@@ -103,7 +103,7 @@ export function AdvancedPage() {
         <span className="inline-flex items-center gap-1.5 rounded-full border border-[#b9b9f9] dark:border-[#533afd]/30 bg-[rgba(83,58,253,0.06)] dark:bg-[rgba(83,58,253,0.15)] px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#533afd] dark:text-[#d6d9fc] backdrop-blur-sm animate-slide-up-fade" style={{ animationDuration: '400ms' }}>
           Advanced Mode
         </span>
-        <h1 className="mt-6 mx-auto max-w-3xl text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 dark:from-slate-50 dark:via-slate-200 dark:to-slate-400 bg-clip-text text-transparent leading-[1.1] animate-slide-up-fade" style={{ animationDuration: '600ms' }}>
+        <h1 className="mt-6 mx-auto max-w-3xl text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] font-[300] text-[#061b31] dark:text-slate-50 leading-[1.10] animate-slide-up-fade" style={{ letterSpacing: '-0.96px', fontFeatureSettings: '"ss01"', animationDuration: '600ms' }}>
           Full control over<br className="hidden sm:block" /> every inbox rule.
         </h1>
         <p className="mt-6 mx-auto max-w-xl text-base sm:text-lg text-slate-500 dark:text-slate-400 leading-relaxed text-balance animate-slide-up-fade" style={{ animationDuration: '800ms' }}>

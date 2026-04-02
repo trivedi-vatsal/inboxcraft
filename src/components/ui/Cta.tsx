@@ -5,7 +5,7 @@ export function Cta() {
   return (
     <section
       aria-labelledby="cta-title"
-      className="relative w-full bg-[#1c1e54] border-t border-white/10 py-24 sm:py-32 px-4 overflow-hidden"
+      className="relative w-full bg-[#1c1e54] border-t border-white/10 py-16 sm:py-24 px-4 overflow-hidden"
     >
 
       {/* ── Background decorations ── */}
@@ -31,7 +31,7 @@ export function Cta() {
 
       <div className="relative mx-auto max-w-4xl flex flex-col items-center text-center">
         {/* Ruby–magenta decorative pill above heading */}
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full px-3 py-1 bg-gradient-to-r from-[#ea2261]/20 to-[#f96bee]/20 border border-[#ea2261]/25">
+        <div className="mb-4 inline-flex items-center gap-2 rounded-full px-3 py-1 bg-gradient-to-r from-[#ea2261]/20 to-[#f96bee]/20 border border-[#ea2261]/25">
           <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-[#ea2261] to-[#f96bee]" />
           <span className="text-[12px] font-[400] text-white/60" style={{ fontFeatureSettings: '"ss01"' }}>
             Free forever · No account needed
@@ -46,14 +46,14 @@ export function Cta() {
           Ready to get organised?
         </h3>
         <p
-          className="mx-auto mt-5 max-w-2xl text-[18px] font-[300] text-white/60 leading-[1.40]"
+          className="mx-auto mt-4 max-w-2xl text-[18px] font-[300] text-white/60 leading-[1.40]"
           style={{ fontFeatureSettings: '"ss01"' }}
         >
           Pick a pre-built template for your favourite service, or go advanced
           to configure every detail.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
           <Link
             to="/templates"
             className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-[4px] bg-[#533afd] px-6 py-2.5 text-[16px] font-[400] text-white hover:bg-[#4434d4] transition-colors"
@@ -72,7 +72,7 @@ export function Cta() {
         </div>
 
         <p
-          className="mt-8 text-[13px] font-[300] text-white/40"
+          className="mt-6 text-[13px] font-[300] text-white/40"
           style={{ fontFeatureSettings: '"ss01"' }}
         >
           <a

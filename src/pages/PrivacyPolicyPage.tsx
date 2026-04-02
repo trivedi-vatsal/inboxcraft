@@ -11,7 +11,7 @@ export function PrivacyPolicyPage() {
         <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200/50 dark:border-emerald-800 bg-emerald-50/50 dark:bg-emerald-950/50 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-700 dark:text-emerald-300 backdrop-blur-sm animate-slide-up-fade" style={{ animationDuration: '400ms' }}>
           Privacy & Safety
         </span>
-        <h1 className="mt-6 mx-auto max-w-3xl text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 dark:from-slate-50 dark:via-slate-200 dark:to-slate-400 bg-clip-text text-transparent leading-[1.1] animate-slide-up-fade" style={{ animationDuration: '600ms' }}>
+        <h1 className="mt-6 mx-auto max-w-3xl text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] font-[300] text-[#061b31] dark:text-slate-50 leading-[1.10] animate-slide-up-fade" style={{ letterSpacing: '-0.96px', fontFeatureSettings: '"ss01"', animationDuration: '600ms' }}>
           100% Local.<br className="hidden sm:block" /> Serverless execution.
         </h1>
         <p className="mt-6 mx-auto max-w-xl text-base sm:text-lg text-slate-500 dark:text-slate-400 leading-relaxed text-balance animate-slide-up-fade" style={{ animationDuration: '800ms' }}>

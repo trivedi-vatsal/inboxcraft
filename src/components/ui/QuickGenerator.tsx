@@ -4,10 +4,10 @@ export function QuickGenerator() {
   return (
     <section
       id="generator"
-      className="pt-24 pb-16 sm:pt-32 sm:pb-20 px-4 sm:px-8 border-y border-[#e5edf5] dark:border-slate-800 bg-white dark:bg-slate-900 transition-colors"
+      className="pt-14 pb-12 sm:pt-20 sm:pb-16 px-4 sm:px-8 border-y border-[#e5edf5] dark:border-slate-700 bg-white dark:bg-slate-950 transition-colors"
     >
       <div className="mx-auto max-w-6xl">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2
             className="text-[2rem] sm:text-[2.5rem] font-[300] text-[#061b31] dark:text-slate-50 leading-[1.10]"
             style={{ letterSpacing: '-0.64px', fontFeatureSettings: '"ss01"' }}

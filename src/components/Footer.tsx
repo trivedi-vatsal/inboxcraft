@@ -53,7 +53,7 @@ export function Footer() {
               className="text-[13px] font-[300] leading-[1.6] text-[#64748d] dark:text-slate-400 max-w-xs"
               style={{ fontFeatureSettings: '"ss01"' }}
             >
-              Generate PowerShell scripts to automate Outlook inbox rules — no code, no server, no sign-up required.
+              Generate PowerShell scripts to automate Outlook inbox rules - no code, no server, no sign-up required.
             </p>
             <div className="flex items-center gap-3">
               <a

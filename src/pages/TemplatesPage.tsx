@@ -132,12 +132,9 @@ export function TemplatesPage() {
             Contribute
           </a>
         </div>
-        <h1 className="mx-auto max-w-3xl text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] animate-slide-up-fade" style={{ animationDuration: '600ms' }}>
-          <span className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 dark:from-slate-50 dark:via-slate-200 dark:to-slate-400 bg-clip-text text-transparent">Pre-built rules for{' '}</span>
-          <br className="hidden sm:block" />
-          <span className="bg-gradient-to-r from-[#533afd] to-[#665efd] dark:from-[#b9b9f9] dark:to-[#d6d9fc] bg-clip-text text-transparent">
-            popular services.
-          </span>
+        <h1 className="mt-6 mx-auto max-w-3xl text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] font-[300] text-[#061b31] dark:text-slate-50 leading-[1.10] animate-slide-up-fade" style={{ letterSpacing: '-0.96px', fontFeatureSettings: '"ss01"', animationDuration: '600ms' }}>
+          Pre-built rules for{' '}<br className="hidden sm:block" />
+          <span className="text-[#533afd] dark:text-[#b9b9f9]">popular services.</span>
         </h1>
         <p className="mt-6 mx-auto max-w-xl text-base sm:text-lg text-slate-500 dark:text-slate-400 leading-relaxed text-balance animate-slide-up-fade" style={{ animationDuration: '800ms' }}>
           Pick a template, enter your M365 email, and download a ready-to-run PowerShell
