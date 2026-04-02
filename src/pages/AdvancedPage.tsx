@@ -100,7 +100,7 @@ export function AdvancedPage() {
       {/* ── Hero ── */}
       <section className="relative pt-36 sm:pt-44 pb-12 px-4 sm:px-8 text-center overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(99,102,241,0.08),transparent)] dark:bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(99,102,241,0.15),transparent)]" />
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-200/50 dark:border-indigo-800 bg-indigo-50/50 dark:bg-indigo-950/50 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-700 dark:text-indigo-300 backdrop-blur-sm animate-slide-up-fade" style={{ animationDuration: '400ms' }}>
+        <span className="inline-flex items-center gap-1.5 rounded-full border border-[#b9b9f9] dark:border-[#533afd]/30 bg-[rgba(83,58,253,0.06)] dark:bg-[rgba(83,58,253,0.15)] px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#533afd] dark:text-[#d6d9fc] backdrop-blur-sm animate-slide-up-fade" style={{ animationDuration: '400ms' }}>
           Advanced Mode
         </span>
         <h1 className="mt-6 mx-auto max-w-3xl text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 dark:from-slate-50 dark:via-slate-200 dark:to-slate-400 bg-clip-text text-transparent leading-[1.1] animate-slide-up-fade" style={{ animationDuration: '600ms' }}>

@@ -1,5 +1,66 @@
 # inboxcraft
 
+## 1.0.1 - Apr 2, 2026
+
+### Patch Changes
+
+- Homepage showcase layout fixes, section background decorations, and logo file extraction.
+
+  ### Fixed
+
+  - **Showcase grid stretch** — changed `items-start` to `items-stretch` on the mock dashboard grid so all three columns share the same height instead of collapsing to their content.
+  - **Rules & Alerts fills height** — `MockRulesManager` is now `h-full flex flex-col` with a `flex-1` content area, filling the remaining left-column space below the folder structure panel.
+  - **PowerShell terminal fills height** — `MockTerminal` receives the same `h-full flex flex-col` treatment, stretching to the bottom of the right column alongside the advanced form.
+  - **Removed bottom fade** — the `bg-gradient-to-t from-slate-50` overlay that masked the bottom of the showcase section has been removed.
+  - **Logo SVG white-line artefact** — the envelope flap path top edge moved from `y="10"` to `y="8"`, eliminating an anti-aliasing seam that rendered as a thin white line on the logo at small sizes.
+
+  ### Changed
+
+  - **Logo extracted to file** — `src/assets/logo.svg` created from the previously inline data URI; `AppHeader` and `Footer` now import it as a Vite asset (base-path safe).
+  - **HowItWorks background** — added SVG dot grid (6 % opacity), a purple radial bloom (top-left), and a ruby glow (bottom-right) behind the step cards.
+  - **CTA background** — added a large central purple bloom, ruby (top-left) and magenta (bottom-right) gradient glows, faint 30° diagonal rule lines, and a top-edge accent line. A ruby–magenta decorative pill is added above the heading.
+  - **CTA / HowItWorks separator** — `border-t border-white/10` added to the CTA section top edge to visually separate the two adjacent `#1c1e54` dark sections.
+  - **Rules & Alerts list** — expanded from 4 to 6 mock rules (added LinkedIn and Salesforce); active rule count label updated to match.
+
+## 1.0.0 - Apr 2, 2026
+
+### Major Changes
+
+- Custom design system overhaul — the entire UI has been redesigned to match the visual system defined in `DESIGN.md`.
+
+  ### Design System
+
+  - **Brand Purple (`#533afd`)** — replaces all `indigo-600` accent color across buttons, links, active states, focus rings, and interactive elements. Hover darkens to `#4434d4`.
+  - **Deep Navy headings (`#061b31`)** — all headlines now use the brand's deep navy instead of black or gradient text. Body text uses slate (`#64748d`), labels use dark slate (`#273951`).
+  - **Weight 300 headlines** — every `h1`–`h6` now renders at `font-weight: 300` with `font-feature-settings: "ss01"` enabled globally. Negative letter-spacing applied proportionally at display sizes (`-0.96px` at 48 px, `-0.64px` at 32 px).
+  - **Blue-tinted multi-layer shadows** — elevated elements (cards, dropdowns, modals) use `rgba(50,50,93,0.25)` + `rgba(0,0,0,0.1)` layered shadows instead of neutral gray. The cooler undertone ties elevation to the brand palette.
+  - **Conservative border-radius (4px–8px)** — all `rounded-xl` / `rounded-2xl` radii on UI chrome replaced with `rounded-[4px]` (buttons, inputs, badges) or `rounded-[6px]` (cards, nav). No pill shapes.
+  - **`font-feature-settings: "ss01"` globally** — applied in `index.css` base layer on all `sohne-var` text. `"tnum"` applied to tabular financial/stat numbers.
+  - **Source Code Pro** — loaded from Google Fonts for all monospace elements (`code`, `pre`, `kbd`).
+
+  ### Sections
+
+  - **Hero** — lightweight 3 rem/3.5 rem headline at weight 300, purple + ghost CTA pair, badge changed from pill to rectangular 4 px radius.
+  - **HowItWorks** — converted to a full-width dark brand section (`#1c1e54` background) with white text and subtle `rgba(255,255,255,0.06)` card surfaces.
+  - **CTA** — redesigned as a full-width `#1c1e54` dark brand section replacing the dot-grid / inner-card layout.
+  - **Features** — stat values now use `"tnum"` tabular numbers; border accents updated to `#b9b9f9`.
+  - **FAQ** — accordions use 6 px radius, ambient shadow, and brand purple open-state accent.
+  - **Navigation** — header rounded to 6 px, active nav items use `rgba(83,58,253,0.08)` background; "Star on GitHub" purple CTA added to desktop right.
+  - **Footer** — headings at weight 400, body links at weight 300, hover color changes to `#533afd`.
+
+  ### Components
+
+  - **`Button`** — primary variant: `#533afd` bg, white text, 4 px radius. Secondary/ghost variant: transparent bg, `#533afd` text, `1px solid #b9b9f9` border.
+  - **`Badge`** — success variant: `rgba(21,190,83,0.2)` bg, `#108c3d` text, `rgba(21,190,83,0.4)` border, 10 px weight-300 text.
+  - **`Card`** — white background, `#e5edf5` border, 6 px radius, blue-tinted shadow.
+  - **`EmailInput` / `QuickGeneratorCard`** — inputs use `#e5edf5` border, `#533afd` focus ring, brand purple action toggles and submit buttons.
+
+  ### Config & Infrastructure
+
+  - **`tailwind.config.js`** — `brand.*` color palette added (`brand-purple`, `brand-navy`, `brand-dark`, `brand-body`, `brand-border`, etc.); `sohne-var` font family; named shadow utilities (`shadow-card`, `shadow-ambient`, `shadow-deep`).
+  - **`src/index.css`** — global `@layer base` sets `sohne-var` font stack, `"ss01"` feature setting, weight-300 headings, and `#061b31` heading color.
+  - **`index.html`** — Google Fonts preconnect + Source Code Pro stylesheet added; body background changed to `white`; theme-color updated to `#533afd`.
+
 ## 0.9.0 - Mar 31, 2026
 
 ### Minor Changes

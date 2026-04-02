@@ -118,7 +118,7 @@ export function TemplatesPage() {
       <section className="relative pt-36 sm:pt-44 pb-12 px-4 sm:px-8 text-center overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(99,102,241,0.08),transparent)] dark:bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(99,102,241,0.15),transparent)]" />
         <div className="flex items-center justify-center gap-3 mb-5 animate-slide-up-fade" style={{ animationDuration: '400ms' }}>
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-200/50 dark:border-indigo-800 bg-indigo-50/50 dark:bg-indigo-950/50 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-700 dark:text-indigo-300 backdrop-blur-sm">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-[#b9b9f9] dark:border-[#533afd]/30 bg-[rgba(83,58,253,0.06)] dark:bg-[rgba(83,58,253,0.15)] px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#533afd] dark:text-[#d6d9fc] backdrop-blur-sm">
             <RiSparklingLine className="h-3.5 w-3.5" />
             Templates
           </span>
@@ -126,7 +126,7 @@ export function TemplatesPage() {
             href="https://github.com/trivedi-vatsal/InboxCraft/blob/main/CONTRIBUTING.md"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-xs font-medium text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors"
+            className="flex items-center gap-1.5 text-xs font-medium text-slate-500 hover:text-[#533afd] dark:text-slate-400 dark:hover:text-[#b9b9f9] transition-colors"
           >
             <RiGithubLine className="h-3.5 w-3.5" />
             Contribute
@@ -135,7 +135,7 @@ export function TemplatesPage() {
         <h1 className="mx-auto max-w-3xl text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] animate-slide-up-fade" style={{ animationDuration: '600ms' }}>
           <span className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 dark:from-slate-50 dark:via-slate-200 dark:to-slate-400 bg-clip-text text-transparent">Pre-built rules for{' '}</span>
           <br className="hidden sm:block" />
-          <span className="bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#533afd] to-[#665efd] dark:from-[#b9b9f9] dark:to-[#d6d9fc] bg-clip-text text-transparent">
             popular services.
           </span>
         </h1>
@@ -167,7 +167,7 @@ export function TemplatesPage() {
             className={cx(
               'w-full rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 py-3 pl-11 pr-4',
               'text-sm text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500',
-              'focus:border-indigo-400 dark:focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:bg-white dark:focus:bg-slate-900',
+              'focus:border-[#533afd] dark:focus:border-[#533afd] focus:outline-none focus:ring-2 focus:ring-[rgba(83,58,253,0.1)] dark:focus:ring-[rgba(83,58,253,0.2)] focus:bg-white dark:focus:bg-slate-900',
               'transition-all shadow-sm backdrop-blur-md',
             )}
           />
@@ -234,7 +234,7 @@ export function TemplatesPage() {
                 <button
                   type="button"
                   onClick={() => { setSearch(''); setActiveCategory('All') }}
-                  className="mt-6 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 border border-indigo-100 dark:border-indigo-500/20 px-5 py-2 text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:bg-indigo-600 dark:hover:bg-indigo-500 hover:text-white dark:hover:text-white transition-colors"
+                  className="mt-6 rounded-lg bg-[rgba(83,58,253,0.06)] dark:bg-[rgba(83,58,253,0.06)]0/10 border border-[#b9b9f9] dark:border-[rgba(83,58,253,0.2)] px-5 py-2 text-sm font-semibold text-[#533afd] dark:text-[#b9b9f9] hover:bg-[#533afd] dark:hover:bg-[rgba(83,58,253,0.06)]0 hover:text-white dark:hover:text-white transition-colors"
                 >
                   Clear filters
                 </button>
@@ -257,15 +257,15 @@ export function TemplatesPage() {
                   className={cx(
                     'group flex flex-col items-center justify-center gap-2.5 rounded-2xl',
                     'border-[1.5px] border-dashed border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 p-8 text-center',
-                    'transition-all duration-200 hover:border-indigo-400 dark:hover:border-indigo-500 hover:bg-indigo-50/50 dark:hover:bg-indigo-500/5 hover:shadow-sm',
+                    'transition-all duration-200 hover:border-[#533afd] dark:hover:border-[#533afd] hover:bg-[rgba(83,58,253,0.06)] dark:hover:bg-[rgba(83,58,253,0.06)]0/5 hover:shadow-sm',
                     'min-h-[160px]',
                   )}
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 group-hover:bg-indigo-100 dark:group-hover:bg-indigo-500/20 transition-colors">
-                    <RiAddLine className="h-6 w-6 text-slate-400 dark:text-slate-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 group-hover:bg-[rgba(83,58,253,0.1)] dark:group-hover:bg-[#533afd]/20 transition-colors">
+                    <RiAddLine className="h-6 w-6 text-slate-400 dark:text-slate-500 group-hover:text-[#533afd] dark:group-hover:text-[#b9b9f9] transition-colors" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-slate-600 dark:text-slate-300 group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors">
+                    <p className="text-sm font-semibold text-slate-600 dark:text-slate-300 group-hover:text-[#533afd] dark:group-hover:text-[#b9b9f9] transition-colors">
                       Add a template
                     </p>
                     <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">Open a PR on GitHub</p>

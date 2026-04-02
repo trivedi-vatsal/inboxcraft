@@ -37,15 +37,15 @@ export function QuickGeneratorCard() {
   }, [senderEmail, userEmail, valid]);
 
   const inputCls =
-    "block w-full rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 transition focus:border-indigo-400 dark:focus:border-indigo-500 focus:bg-white dark:focus:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:focus:ring-indigo-900/50";
+    "block w-full rounded-[4px] border border-[#e5edf5] dark:border-slate-800 bg-white dark:bg-slate-900/50 px-4 py-3 text-[16px] font-[300] text-[#061b31] dark:text-slate-100 placeholder-[#64748d] dark:placeholder-slate-500 transition focus:border-[#533afd] dark:focus:border-[#533afd] focus:bg-white dark:focus:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-[rgba(83,58,253,0.1)] dark:focus:ring-[rgba(83,58,253,0.2)]";
 
   return (
-    <div className="mx-auto max-w-lg rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 shadow-xl shadow-indigo-500/5 dark:shadow-none p-6 sm:p-8 ring-1 ring-black/[2%] dark:ring-white/[2%] backdrop-blur-md">
+    <div className="mx-auto max-w-lg rounded-[6px] bg-white dark:bg-slate-900/40 border border-[#e5edf5] dark:border-slate-800 shadow-[rgba(50,50,93,0.25)_0px_30px_45px_-30px,rgba(0,0,0,0.1)_0px_18px_36px_-18px] p-6 sm:p-8">
       <div className="space-y-4">
         <div className="space-y-1.5">
           <label
             htmlFor="hq-user-email"
-            className="block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400"
+            className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-400"
           >
             Your M365 Email
           </label>
@@ -66,7 +66,7 @@ export function QuickGeneratorCard() {
         <div className="space-y-1.5">
           <label
             htmlFor="hq-sender-email"
-            className="block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400"
+            className="block text-[11px] font-[400] uppercase tracking-wide text-[#273951] dark:text-slate-400"
           >
             Sender Email
           </label>
@@ -98,7 +98,7 @@ export function QuickGeneratorCard() {
         <button
           onClick={handleDownload}
           disabled={!valid}
-          className="w-full flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 active:bg-indigo-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+          className="w-full flex items-center justify-center gap-2 rounded-[4px] bg-[#533afd] px-4 py-2.5 text-[16px] font-[400] text-white hover:bg-[#4434d4] active:bg-[#2e2b8c] disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
         >
           <RiDownloadLine className="size-4" />
           Download Rules
@@ -108,7 +108,7 @@ export function QuickGeneratorCard() {
           Need more options?{" "}
           <Link
             to="/advanced"
-            className="font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 underline underline-offset-2"
+            className="font-[400] text-[#533afd] dark:text-[#b9b9f9] hover:text-[#4434d4] dark:hover:text-white underline underline-offset-2"
           >
             Try Advanced mode →
           </Link>

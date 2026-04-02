@@ -31,7 +31,7 @@ export function EmailModal({ templateName, onConfirm, onClose }: EmailModalProps
   const btnCls = (active: boolean) =>
     `flex-1 rounded-lg px-3 py-2 text-xs font-medium transition-colors border ${
       active
-        ? 'bg-indigo-600 text-white border-indigo-600 shadow-sm'
+        ? 'bg-[#533afd] text-white border-[#533afd] shadow-sm'
         : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600'
     }`
 
@@ -75,7 +75,7 @@ export function EmailModal({ templateName, onConfirm, onClose }: EmailModalProps
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@company.com"
-              className="block w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 px-3 py-2 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 transition focus:border-indigo-400 dark:focus:border-indigo-500 focus:bg-white dark:focus:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:focus:ring-indigo-900/50"
+              className="block w-full rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 px-3 py-2 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 transition focus:border-[#533afd] dark:focus:border-[#533afd] focus:bg-white dark:focus:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-[rgba(83,58,253,0.1)] dark:focus:ring-[rgba(83,58,253,0.2)]"
             />
             <p className="text-xs text-slate-400 dark:text-slate-500">Used for folder paths in the script. Leave blank to auto-detect.</p>
           </div>
@@ -104,7 +104,7 @@ export function EmailModal({ templateName, onConfirm, onClose }: EmailModalProps
             </button>
             <button
               type="submit"
-              className="flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-indigo-700 active:bg-indigo-800 transition-colors"
+              className="flex items-center gap-2 rounded-lg bg-[#533afd] px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-[#4434d4] active:bg-[#2e2b8c] transition-colors"
             >
               <RiDownloadLine className="size-3.5" />
               Download Script

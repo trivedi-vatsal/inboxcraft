@@ -5,7 +5,8 @@ import { cx, focusRing } from '@/lib/utils'
 
 const buttonVariants = tv({
   base: [
-    'relative inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium',
+    'relative inline-flex items-center justify-center whitespace-nowrap font-[400]',
+    '[font-feature-settings:"ss01"]',
     'transition-all duration-100 ease-in-out',
     'disabled:pointer-events-none disabled:opacity-50',
     focusRing,
@@ -13,33 +14,34 @@ const buttonVariants = tv({
   variants: {
     variant: {
       primary: [
-        'bg-blue-500 text-white shadow-sm',
-        'hover:bg-blue-600 active:bg-blue-700',
-        'dark:bg-blue-500 dark:text-white',
-        'dark:hover:bg-blue-600 dark:active:bg-blue-700',
+        'bg-[#533afd] text-white rounded-[4px]',
+        'hover:bg-[#4434d4] active:bg-[#2e2b8c]',
+        'dark:bg-[#533afd] dark:text-white',
+        'dark:hover:bg-[#4434d4]',
       ],
       secondary: [
-        'bg-white text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300',
-        'hover:bg-gray-50 active:bg-gray-100',
-        'dark:bg-gray-950 dark:text-gray-50 dark:ring-gray-800',
-        'dark:hover:bg-gray-900 dark:active:bg-gray-800',
+        'bg-transparent text-[#533afd] rounded-[4px]',
+        'border border-[#b9b9f9]',
+        'hover:bg-[rgba(83,58,253,0.05)]',
+        'dark:text-[#b9b9f9] dark:border-[#533afd]/40',
+        'dark:hover:bg-[rgba(83,58,253,0.1)]',
       ],
       ghost: [
-        'text-gray-700',
-        'hover:bg-gray-100 hover:text-gray-900',
-        'dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50',
+        'bg-transparent text-[#273951] rounded-[4px]',
+        'hover:bg-[rgba(83,58,253,0.05)] hover:text-[#533afd]',
+        'dark:text-slate-300 dark:hover:bg-[rgba(83,58,253,0.1)] dark:hover:text-[#b9b9f9]',
       ],
       destructive: [
-        'bg-red-500 text-white shadow-sm',
-        'hover:bg-red-600 active:bg-red-700',
-        'dark:bg-red-700 dark:text-white',
-        'dark:hover:bg-red-600 dark:active:bg-red-500',
+        'bg-[#ea2261] text-white rounded-[4px]',
+        'hover:bg-[#c41e52] active:bg-[#a01940]',
+        'dark:bg-[#ea2261] dark:text-white',
+        'dark:hover:bg-[#c41e52]',
       ],
     },
     size: {
-      sm: 'h-8 px-3 text-xs',
-      md: 'h-9 px-4',
-      lg: 'h-10 px-6',
+      sm: 'h-8 px-3 text-[14px]',
+      md: 'h-9 px-4 text-[16px]',
+      lg: 'h-10 px-6 text-[16px]',
     },
   },
   defaultVariants: {

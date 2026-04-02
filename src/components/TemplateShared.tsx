@@ -36,10 +36,10 @@ export const CAT_COLOR: Record<string, { chip: string; badge: string; icon: stri
     glow:  'group-hover:shadow-sky-100 dark:group-hover:shadow-sky-900/20',
   },
   Productivity: {
-    chip:  'bg-indigo-600 text-white shadow-indigo-200 dark:shadow-indigo-900',
-    badge: 'bg-indigo-50 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 ring-indigo-200 dark:ring-indigo-500/20',
-    icon:  'bg-indigo-100 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400',
-    glow:  'group-hover:shadow-indigo-100 dark:group-hover:shadow-indigo-900/20',
+    chip:  'bg-[#533afd] text-white shadow-[rgba(83,58,253,0.15)] dark:shadow-[rgba(83,58,253,0.3)]',
+    badge: 'bg-[rgba(83,58,253,0.06)] dark:bg-[rgba(83,58,253,0.06)]0/10 text-[#533afd] dark:text-[#b9b9f9] ring-[#b9b9f9] dark:ring-[#533afd]/20',
+    icon:  'bg-[rgba(83,58,253,0.08)] dark:bg-[rgba(83,58,253,0.06)]0/10 text-[#533afd] dark:text-[#b9b9f9]',
+    glow:  'group-hover:shadow-[rgba(83,58,253,0.08)] dark:group-hover:shadow-[rgba(83,58,253,0.3)]/20',
   },
 }
 
@@ -77,14 +77,14 @@ export function TemplateCard({
         'shadow-sm cursor-pointer outline-none overflow-hidden',
         'transition-all duration-200 ease-out',
         isSelected
-          ? 'border-indigo-400 dark:border-indigo-500 shadow-md ring-2 ring-indigo-200 dark:ring-indigo-900/50 ring-offset-1'
+          ? 'border-[#533afd] dark:border-[#533afd] shadow-md ring-2 ring-[#b9b9f9] dark:ring-[rgba(83,58,253,0.3)] ring-offset-1'
           : 'border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-transparent dark:hover:border-transparent',
         colors.glow,
-        'focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2',
+        'focus-visible:ring-2 focus-visible:ring-[#533afd] focus-visible:ring-offset-2',
       )}
     >
       {/* Top gradient band */}
-      <div className="h-1 w-full bg-gradient-to-r from-indigo-400 via-indigo-500 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+      <div className="h-1 w-full bg-gradient-to-r from-[#b9b9f9] via-[#533afd] to-[#665efd] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
 
       {/* Card body */}
       <div className="flex items-start gap-3.5 px-4 pt-4 pb-3">
@@ -128,8 +128,8 @@ export function TemplateCard({
             onClick={(e) => onGetScript(card, e)}
             className={cx(
               'rounded-lg px-2.5 py-1 text-[11px] font-semibold text-white',
-              'bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800',
-              'transition-colors shadow-sm shadow-indigo-200 dark:shadow-none',
+              'bg-[#533afd] hover:bg-[#4434d4] active:bg-[#2e2b8c]',
+              'transition-colors shadow-sm shadow-[rgba(83,58,253,0.15)] dark:shadow-none',
             )}
           >
             Get Script

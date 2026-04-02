@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: 'sohne-var', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
+    font-feature-settings: "ss01";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #061b31;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    font-feature-settings: "ss01";
+    color: #061b31;
+  }
+
+  code, pre, kbd, samp {
+    font-family: 'Source Code Pro', 'SourceCodePro', 'SFMono-Regular', Consolas, monospace;
+    font-feature-settings: normal;
+  }
+
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4,
+  .dark h5,
+  .dark h6 {
+    color: #f0f4f8;
+  }
+}
+
 .backdrop-blur-nav {
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -9,4 +39,9 @@
 
 .mask-radial {
   mask-image: radial-gradient(rgba(0,0,0,1) 0%, transparent 80%);
+}
+
+/* style tabular number utility */
+.tabular-nums {
+  font-feature-settings: "tnum";
 }

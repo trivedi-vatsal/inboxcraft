@@ -42,10 +42,10 @@ const CAT_COLOR: Record<string, { badge: string; icon: string; accent: string; b
     bar:    'from-sky-400 to-sky-600',
   },
   Productivity: {
-    badge:  'bg-indigo-50 text-indigo-700 ring-indigo-200',
-    icon:   'bg-indigo-100 text-indigo-600',
-    accent: 'text-indigo-600',
-    bar:    'from-indigo-400 to-indigo-600',
+    badge:  'bg-[rgba(83,58,253,0.06)] text-[#533afd] ring-[#b9b9f9]',
+    icon:   'bg-[rgba(83,58,253,0.08)] text-[#533afd]',
+    accent: 'text-[#533afd]',
+    bar:    'from-[#b9b9f9] to-[#533afd]',
   },
 }
 
@@ -224,14 +224,14 @@ export function TemplateDrawer({
 
           {/* What this does section */}
           {detail && (
-            <div className="rounded-xl border border-indigo-100 dark:border-indigo-500/20 bg-indigo-50/60 dark:bg-indigo-500/10 px-4 py-3.5">
+            <div className="rounded-xl border border-[#b9b9f9] dark:border-[rgba(83,58,253,0.2)] bg-[rgba(83,58,253,0.06)]/60 dark:bg-[rgba(83,58,253,0.06)]0/10 px-4 py-3.5">
               <div className="flex items-center gap-2 mb-1.5">
-                <RiShieldCheckLine className="h-3.5 w-3.5 text-indigo-500 shrink-0" />
-                <p className="text-[11px] font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400">
+                <RiShieldCheckLine className="h-3.5 w-3.5 text-[#533afd] shrink-0" />
+                <p className="text-[11px] font-bold uppercase tracking-widest text-[#533afd] dark:text-[#b9b9f9]">
                   What this rule does
                 </p>
               </div>
-              <p className="text-[12.5px] text-indigo-700 dark:text-indigo-300 leading-relaxed">
+              <p className="text-[12.5px] text-[#533afd] dark:text-[#d6d9fc] leading-relaxed">
                 Emails from the{' '}
                 <span className="font-semibold">{detail.senders.length} sender{detail.senders.length !== 1 ? 's' : ''}</span>{' '}
                 above will be automatically moved to{' '}
@@ -248,9 +248,9 @@ export function TemplateDrawer({
             disabled={!detail || loading}
             className={cx(
               'w-full flex items-center justify-center gap-2 rounded-xl',
-              'bg-indigo-600 px-4 py-3 text-sm font-bold text-white',
-              'shadow-sm shadow-indigo-200 dark:shadow-none',
-              'hover:bg-indigo-700 active:bg-indigo-800',
+              'bg-[#533afd] px-4 py-3 text-sm font-bold text-white',
+              'shadow-sm shadow-[rgba(83,58,253,0.15)] dark:shadow-none',
+              'hover:bg-[#4434d4] active:bg-[#2e2b8c]',
               'disabled:opacity-40 disabled:cursor-not-allowed',
               'transition-all duration-150',
             )}

@@ -64,7 +64,7 @@ export function GeneratorOutput({
             <span className="text-xs font-mono text-slate-500 ml-2">powershell</span>
           </div>
           <div className="p-6 font-mono text-xs leading-relaxed text-slate-400">
-            <p className="text-indigo-400"># Welcome to InboxCraft CLI</p>
+            <p className="text-[#b9b9f9]"># Welcome to InboxCraft CLI</p>
             <p className="mt-2 text-slate-500">1. Paste sender email addresses on the left</p>
             <p className="text-slate-500">2. Configure your target parent folder</p>
             <p className="text-slate-500">3. Press <span className="text-slate-300 bg-white/10 px-1 py-0.5 rounded">Ctrl+Enter</span> to generate the script</p>
@@ -78,7 +78,7 @@ export function GeneratorOutput({
             
             <div className="absolute bottom-6 left-6 animate-fade-in opacity-0 group-hover:opacity-100 transition-opacity">
                <span className="text-xs text-slate-500 font-sans">Or pick a{' '}</span>
-               <button onClick={onBrowseTemplates} className="text-indigo-400 hover:text-indigo-300 underline underline-offset-2 font-sans">template ✨</button>
+               <button onClick={onBrowseTemplates} className="text-[#b9b9f9] hover:text-[#d6d9fc] underline underline-offset-2 font-sans">template ✨</button>
             </div>
           </div>
         </div>

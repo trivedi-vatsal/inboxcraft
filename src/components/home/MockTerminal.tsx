@@ -2,8 +2,8 @@
 
 export function MockTerminal() {
   return (
-    <div className="w-full rounded-xl border border-slate-700 shadow-xl overflow-hidden text-xs select-none">
-      <div className="flex items-center gap-1.5 bg-[#1e1e2e] px-3 py-2 border-b border-white/5">
+    <div className="w-full h-full flex flex-col rounded-xl border border-slate-700 shadow-xl overflow-hidden text-xs select-none">
+      <div className="flex items-center gap-1.5 bg-[#1e1e2e] px-3 py-2 border-b border-white/5 shrink-0">
         <span className="h-2 w-2 rounded-full bg-red-400/80" />
         <span className="h-2 w-2 rounded-full bg-amber-400/80" />
         <span className="h-2 w-2 rounded-full bg-emerald-400/80" />
@@ -11,7 +11,7 @@ export function MockTerminal() {
           Windows PowerShell
         </span>
       </div>
-      <div className="bg-[#1e1e2e] p-3 font-mono space-y-0.5 text-[10px] text-left">
+      <div className="flex-1 bg-[#1e1e2e] p-3 font-mono space-y-0.5 text-[10px] text-left overflow-y-auto">
         <div className="text-indigo-300">
           PS C:\Users\vatsal&gt; .\outlook-rules.ps1
         </div>

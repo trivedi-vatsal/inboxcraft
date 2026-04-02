@@ -23,7 +23,7 @@ export function FolderTree({ aliases, parentFolder }: FolderTreeProps) {
           <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
             <span className="text-slate-300 dark:text-slate-600 select-none">└──</span>
             <span>📁</span>
-            <span className="text-indigo-600 dark:text-indigo-400 font-medium">{parentFolder}</span>
+            <span className="text-[#533afd] dark:text-[#b9b9f9] font-medium">{parentFolder}</span>
           </div>
 
           {/* Alias folders */}

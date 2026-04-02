@@ -4,29 +4,35 @@ import { cx } from '@/lib/utils'
 
 const badgeVariants = tv({
   base: cx(
-    'inline-flex items-center gap-x-1 whitespace-nowrap rounded px-2 py-1 text-xs font-medium ring-1 ring-inset',
+    'inline-flex items-center gap-x-1 whitespace-nowrap rounded-[4px] font-[300]',
+    '[font-feature-settings:"ss01"]',
   ),
   variants: {
     variant: {
       default: [
-        'bg-blue-50 text-blue-700 ring-blue-600/20',
-        'dark:bg-blue-400/10 dark:text-blue-400 dark:ring-blue-400/20',
+        'bg-[rgba(83,58,253,0.08)] text-[#533afd] border border-[#b9b9f9]',
+        'px-1.5 py-0.5 text-[11px]',
+        'dark:bg-[rgba(83,58,253,0.15)] dark:text-[#b9b9f9] dark:border-[#533afd]/30',
       ],
       neutral: [
-        'bg-gray-50 text-gray-700 ring-gray-600/20',
-        'dark:bg-gray-400/10 dark:text-gray-400 dark:ring-gray-400/20',
+        'bg-white text-black border border-[#f6f9fc]',
+        'px-1.5 py-0 text-[11px]',
+        'dark:bg-slate-800 dark:text-slate-200 dark:border-slate-700',
       ],
       success: [
-        'bg-emerald-50 text-emerald-700 ring-emerald-600/20',
-        'dark:bg-emerald-400/10 dark:text-emerald-400 dark:ring-emerald-400/20',
+        'bg-[rgba(21,190,83,0.2)] text-[#108c3d] border border-[rgba(21,190,83,0.4)]',
+        'px-1.5 py-0.5 text-[10px]',
+        'dark:bg-[rgba(21,190,83,0.1)] dark:text-[#15be53] dark:border-[rgba(21,190,83,0.3)]',
       ],
       error: [
-        'bg-red-50 text-red-700 ring-red-600/20',
-        'dark:bg-red-400/10 dark:text-red-400 dark:ring-red-400/20',
+        'bg-[rgba(234,34,97,0.08)] text-[#ea2261] border border-[rgba(234,34,97,0.25)]',
+        'px-1.5 py-0.5 text-[10px]',
+        'dark:bg-[rgba(234,34,97,0.12)] dark:text-[#f96bee] dark:border-[rgba(234,34,97,0.2)]',
       ],
       warning: [
-        'bg-yellow-50 text-yellow-700 ring-yellow-600/20',
-        'dark:bg-yellow-400/10 dark:text-yellow-400 dark:ring-yellow-400/20',
+        'bg-[rgba(155,104,41,0.08)] text-[#9b6829] border border-[rgba(155,104,41,0.25)]',
+        'px-1.5 py-0.5 text-[10px]',
+        'dark:bg-[rgba(155,104,41,0.15)] dark:text-[#f5c06e] dark:border-[rgba(155,104,41,0.2)]',
       ],
     },
   },

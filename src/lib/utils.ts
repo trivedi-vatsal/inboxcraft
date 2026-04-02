@@ -7,15 +7,15 @@ export function cx(...args: ClassValue[]) {
 
 export const focusInput = [
   'focus:ring-2',
-  'focus:ring-blue-200',
-  'focus:dark:ring-blue-700/30',
-  'focus:border-blue-500',
-  'focus:dark:border-blue-700',
+  'focus:ring-[rgba(83,58,253,0.15)]',
+  'focus:dark:ring-[rgba(83,58,253,0.25)]',
+  'focus:border-[#533afd]',
+  'focus:dark:border-[#533afd]',
 ]
 
 export const focusRing = [
   'outline outline-offset-2 outline-0 focus-visible:outline-2',
-  'outline-blue-500 dark:outline-blue-500',
+  'outline-[#533afd] dark:outline-[#533afd]',
 ]
 
 export const hasErrorInput = [

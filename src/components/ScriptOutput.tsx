@@ -55,7 +55,7 @@ export function ScriptOutput({ script, emails, parentFolder, ruleAction, onCopy,
           </button>
           <button
             onClick={onDownload}
-            className="flex items-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-medium text-white shadow-sm transition hover:bg-indigo-700 active:bg-indigo-800"
+            className="flex items-center gap-1.5 rounded-lg bg-[#533afd] px-3 py-1.5 text-xs font-medium text-white shadow-sm transition hover:bg-[#4434d4] active:bg-[#2e2b8c]"
           >
             <RiDownloadLine className="size-3.5" />
             <span className="hidden sm:inline">Download</span>
@@ -83,7 +83,7 @@ export function ScriptOutput({ script, emails, parentFolder, ruleAction, onCopy,
                   <span className="text-slate-400 dark:text-slate-600">→</span>
                   <span className="font-mono text-slate-700 dark:text-slate-300">{e.raw}</span>
                   <span className="text-slate-400 dark:text-slate-500">emails are {actionVerb} to</span>
-                  <span className="font-mono text-indigo-600 dark:text-indigo-400">Inbox/{parentFolder}/{e.alias}</span>
+                  <span className="font-mono text-[#533afd] dark:text-[#b9b9f9]">Inbox/{parentFolder}/{e.alias}</span>
                 </li>
               ))}
             </ul>
@@ -103,7 +103,7 @@ export function ScriptOutput({ script, emails, parentFolder, ruleAction, onCopy,
             toast.success('Code copied to clipboard')
             setTimeout(() => setBlockCopyState('idle'), 2000)
           }}
-          className="absolute top-3 right-3 z-10 rounded bg-white/10 dark:bg-white/5 p-2 text-slate-300 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all hover:bg-white/20 hover:text-white focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-indigo-500/50"
+          className="absolute top-3 right-3 z-10 rounded bg-white/10 dark:bg-white/5 p-2 text-slate-300 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all hover:bg-white/20 hover:text-white focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-[rgba(83,58,253,0.3)]"
           aria-label="Copy code block"
         >
           {blockCopyState === 'copied' ? <RiCheckLine className="size-4 text-emerald-400" /> : <RiFileCopyLine className="size-4" />}
