@@ -28,7 +28,7 @@ Creating fifty inbox rules through the Outlook Web UI for GitHub, Datadog, Slack
 
 ### Quick mode
 
-1. Go to **`/#/`** (the home page)
+1. Go to **`https://inboxcraft.app/`** (the home page)
 2. Enter **your M365 email** and **the sender's email address**
 3. Click **Download Rules** — `outlook-rules.ps1` downloads immediately
 4. Run the script in PowerShell
