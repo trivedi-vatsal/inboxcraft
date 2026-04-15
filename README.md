@@ -48,7 +48,7 @@ Creating fifty inbox rules through the Outlook Web UI for GitHub, Datadog, Slack
 3. Click a card to open the detail drawer — review the sender list
 4. Click **Get Script**, enter your M365 email, and download
 
-### Input formats (Advanced mode)
+### Input formats (Advanced mode) 
 
 ```
 noreply@github.com               # exact sender address
