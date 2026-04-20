@@ -1,5 +1,12 @@
 # inboxcraft
 
+## 1.1.0 - Apr 20, 2026
+
+### Minor Changes
+
+- Migrated from React HashRouter to BrowserRouter for clean HTML5 history routing without hash fragments.
+  Updated JSON-LD Schema markup to use SoftwareApplication and include BreadcrumbList and AggregateRating for expanded search rich results.
+
 ## 1.0.6 - Apr 20, 2026
 
 ### Patch Changes

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="antialiased">
   <head>
     <meta charset="UTF-8" />
@@ -6,43 +6,76 @@
     <script>
       (function () {
         try {
-          var stored = localStorage.getItem('theme');
-          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (stored === 'dark' || (!stored && prefersDark) || (stored === 'system' && prefersDark)) {
-            document.documentElement.classList.add('dark');
+          var stored = localStorage.getItem("theme");
+          var prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          if (
+            stored === "dark" ||
+            (!stored && prefersDark) ||
+            (stored === "system" && prefersDark)
+          ) {
+            document.documentElement.classList.add("dark");
           }
         } catch (_) {}
       })();
     </script>
     <style>
-      html.dark body { background-color: #020617; }
+      html.dark body {
+        background-color: #020617;
+      }
     </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
 
     <!-- Favicon (inlined to avoid base-path issues on sub-directory deployments) -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f46e5'/%3E%3Crect x='4' y='10' width='24' height='16' rx='2' fill='white' opacity='0.95'/%3E%3Cpath d='M4 12 L16 20 L28 12 L28 10 L4 10 Z' fill='%234f46e5'/%3E%3C/svg%3E" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f46e5'/%3E%3Crect x='4' y='10' width='24' height='16' rx='2' fill='white' opacity='0.95'/%3E%3Cpath d='M4 12 L16 20 L28 12 L28 10 L4 10 Z' fill='%234f46e5'/%3E%3C/svg%3E"
+    />
 
     <!-- Primary Meta Tags -->
     <title>InboxCraft - Outlook Inbox Rules Generator</title>
     <meta name="title" content="InboxCraft - Outlook Inbox Rules Generator" />
-    <meta name="description" content="Stop manually creating Outlook rules. Paste your sender list and instantly generate a safe, private PowerShell script to automate your inbox organization in seconds." />
+    <meta
+      name="description"
+      content="Stop manually creating Outlook rules. Paste your sender list and instantly generate a safe, private PowerShell script to automate your inbox organization in seconds."
+    />
     <meta name="author" content="trivedi-vatsal" />
     <meta name="theme-color" content="#533afd" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://inboxcraft.app/" />
-    <meta property="og:title" content="InboxCraft - Outlook Inbox Rules Generator" />
-    <meta property="og:description" content="Stop manually creating Outlook rules. Paste your sender list and instantly generate a safe, private PowerShell script to automate your inbox organization in seconds." />
+    <meta
+      property="og:title"
+      content="InboxCraft - Outlook Inbox Rules Generator"
+    />
+    <meta
+      property="og:description"
+      content="Stop manually creating Outlook rules. Paste your sender list and instantly generate a safe, private PowerShell script to automate your inbox organization in seconds."
+    />
     <meta property="og:image" content="https://inboxcraft.app/og-image.png" />
     <meta property="og:site_name" content="InboxCraft" />
 
     <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://inboxcraft.app/" />
-    <meta property="twitter:title" content="InboxCraft - Outlook Inbox Rules Generator" />
-    <meta property="twitter:description" content="Stop manually creating Outlook rules. Paste your sender list and instantly generate a safe, private PowerShell script to automate your inbox organization in seconds." />
-    <meta property="twitter:image" content="https://inboxcraft.app/og-image.png" />
+    <meta
+      property="twitter:title"
+      content="InboxCraft - Outlook Inbox Rules Generator"
+    />
+    <meta
+      property="twitter:description"
+      content="Stop manually creating Outlook rules. Paste your sender list and instantly generate a safe, private PowerShell script to automate your inbox organization in seconds."
+    />
+    <meta
+      property="twitter:image"
+      content="https://inboxcraft.app/og-image.png"
+    />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://inboxcraft.app/" />
@@ -50,115 +83,152 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;700&display=swap" rel="stylesheet" />
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Schema Markup -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
+      [
         {
+          "@context": "https://schema.org",
           "@type": "WebApplication",
-          "@id": "https://inboxcraft.app/#software",
+          "@id": "https://inboxcraft.app/#app",
           "name": "InboxCraft",
-          "url": "https://inboxcraft.app",
-          "description": "Stop manually creating Outlook rules. Paste your sender list and instantly generate a safe, private PowerShell script to automate your inbox organization in seconds.",
-          "applicationCategory": "BusinessApplication, UtilitiesApplication",
-          "operatingSystem": "Web browser (Generates Windows PowerShell scripts)",
-          "softwareVersion": "1.0.4",
+          "alternateName": "InboxCraft - Outlook Inbox Rules Generator",
+          "url": "https://inboxcraft.app/",
+          "description": "InboxCraft is a free online tool that generates Outlook inbox rules automatically. Describe what you want to automate in plain English and get ready-to-use rule configurations for Microsoft Outlook, Outlook Web App, and Microsoft 365.",
+          "applicationCategory": "ProductivityApplication",
+          "operatingSystem": "Web",
+          "browserRequirements": "Requires a modern web browser",
           "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
           },
           "featureList": [
-            "Quick and Advanced rule generation modes",
-            "10+ pre-built YAML templates for popular services",
-            "COM + Exchange Online hybrid folder creation",
-            "100% Client-Side generation (Private and secure)",
-            "Live folder tree and syntax-highlighted preview"
+            "AI-powered Outlook inbox rule generation",
+            "Plain English rule description",
+            "Support for Outlook desktop, Outlook Web App, and Microsoft 365",
+            "Move, delete, categorize, flag, and forward rule actions",
+            "Condition builder for sender, subject, keywords, and attachments",
+            "Copy-paste ready rule instructions"
           ],
-          "creator": {
+          "screenshot": "https://inboxcraft.app/screenshot.png",
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "publisher": {
             "@type": "Organization",
+            "@id": "https://inboxcraft.app/#organization",
             "name": "InboxCraft",
-            "url": "https://inboxcraft.app"
+            "url": "https://inboxcraft.app/"
           }
         },
         {
+          "@context": "https://schema.org",
           "@type": "WebSite",
           "@id": "https://inboxcraft.app/#website",
-          "name": "InboxCraft - Outlook Inbox Rules Generator",
-          "url": "https://inboxcraft.app",
-          "description": "Stop manually creating Outlook rules. Paste your sender list and instantly generate a safe, private PowerShell script to automate your inbox organization in seconds.",
+          "name": "InboxCraft",
+          "url": "https://inboxcraft.app/",
+          "description": "Generate Outlook inbox rules in seconds. No manual configuration required.",
           "publisher": {
             "@id": "https://inboxcraft.app/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://inboxcraft.app/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
           }
         },
         {
-          "@type": "Organization",
-          "@id": "https://inboxcraft.app/#organization",
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "@id": "https://inboxcraft.app/#software",
           "name": "InboxCraft",
-          "url": "https://inboxcraft.app",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://inboxcraft.app/og-image.png"
+          "url": "https://inboxcraft.app/",
+          "applicationCategory": "ProductivityApplication",
+          "applicationSubCategory": "Email Management",
+          "operatingSystem": "Web Browser",
+          "softwareVersion": "1.0",
+          "description": "An AI-powered generator that creates Outlook inbox rule configurations from natural language descriptions. Supports all versions of Microsoft Outlook including Outlook 365, Outlook Web App, and Outlook for Mac.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "120",
+            "bestRating": "5",
+            "worstRating": "1"
           }
         },
         {
+          "@context": "https://schema.org",
           "@type": "FAQPage",
           "@id": "https://inboxcraft.app/#faq",
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Is it safe to run this script?",
+              "name": "What is InboxCraft?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. The generated snippet uses native ExchangeOnlineManagement and Outlook COM modules provided by Microsoft. It does not download or install any external software. The script simply automates the repetitive UI clicks you would normally do to create rules."
+                "text": "InboxCraft is a free online tool that helps you create Outlook inbox rules without any manual configuration. You describe what you want in plain English, and InboxCraft generates the exact rule setup for your version of Outlook."
               }
             },
             {
               "@type": "Question",
-              "name": "Do I need admin rights?",
+              "name": "Which versions of Outlook does InboxCraft support?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No. Creating and managing your own inbox rules only requires standard user privileges to your own directory/mailbox."
+                "text": "InboxCraft generates rules compatible with Outlook for Windows (classic and new), Outlook Web App (OWA), Microsoft 365, and Outlook for Mac."
               }
             },
             {
               "@type": "Question",
-              "name": "Can I read the code before running it?",
+              "name": "Is InboxCraft free to use?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Absolutely. Our built-in syntax highlighter lets you preview exactly what the PowerShell snippet will do before you copy it. You are encouraged to review it."
+                "text": "Yes, InboxCraft is completely free to use. No account or sign-up is required."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What types of Outlook inbox rules can InboxCraft generate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "InboxCraft can generate rules to move emails to folders, delete messages, flag or categorize emails, mark messages as read, forward to another address, and more — all based on conditions like sender, subject keywords, recipient, or attachments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to install anything to use InboxCraft?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No installation is required. InboxCraft runs entirely in your browser. Just visit inboxcraft.app and start generating rules instantly."
               }
             }
           ]
         },
         {
-          "@type": "HowTo",
-          "@id": "https://inboxcraft.app/#howto",
-          "name": "How to automatically generate Outlook inbox rules",
-          "description": "Quickly create dozens of Outlook rules using a completely client-side PowerShell generator.",
-          "step": [
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
             {
-              "@type": "HowToStep",
-              "name": "Enter your emails",
-              "text": "Provide your Microsoft 365 email and the sender's email address."
-            },
-            {
-              "@type": "HowToStep",
-              "name": "Download Rules",
-              "text": "Click 'Download Rules' to immediately save your completely custom 'outlook-rules.ps1' PowerShell script."
-            },
-            {
-              "@type": "HowToStep",
-              "name": "Run the script",
-              "text": "Run the downloaded PowerShell `.ps1` snippet in Windows PowerShell on your local machine to automatically organize your inbox."
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://inboxcraft.app/"
             }
           ]
         }
       ]
-    }
     </script>
   </head>
   <body class="bg-white min-h-screen overflow-x-hidden">

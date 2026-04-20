@@ -35,7 +35,7 @@ Creating fifty inbox rules through the Outlook Web UI for GitHub, Datadog, Slack
 
 ### Advanced mode
 
-1. Go to **`/#/advanced`** or click **Advanced** in the nav
+1. Go to **`/advanced`** or click **Advanced** in the nav
 2. Paste multiple sender addresses (one per line, comma-separated, or `@domain.com`)
 3. Set your M365 email, parent folder name, rule action, and match type
 4. Click **Generate Script** or press `Ctrl+Enter`
@@ -43,7 +43,7 @@ Creating fifty inbox rules through the Outlook Web UI for GitHub, Datadog, Slack
 
 ### Templates
 
-1. Go to **`/#/templates`** or click **Templates** in the nav
+1. Go to **`/templates`** or click **Templates** in the nav
 2. Browse by category or search by name
 3. Click a card to open the detail drawer — review the sender list
 4. Click **Get Script**, enter your M365 email, and download
@@ -75,7 +75,7 @@ alerts@hdfcbank.com
 Executing PowerShell scripts that interface with Exchange Online requires trust. InboxCraft is built from the ground up for security-conscious developers and IT admins:
 
 - **100% Client-Side:** InboxCraft is a static Vite app. Your email addresses, tenant info, and parameters never leave your browser window. There is no backend server.
-- **Analytics:** Anonymous, aggregated usage data is collected via PostHog (page views, feature usage, masked session recordings). No form content is ever captured. See the [Privacy Policy](https://trivedi-vatsal.github.io/InboxCraft/#/privacy) for full details.
+- **Analytics:** Anonymous, aggregated usage data is collected via PostHog (page views, feature usage, masked session recordings). No form content is ever captured. See the [Privacy Policy](https://inboxcraft.app/privacy) for full details.
 - **Audit-Ready Output:** The generated script uses pure, standard Microsoft `ExchangeOnlineManagement` cmdlets. It is syntax-highlighted in the browser so you can inspect every single line before executing it.
 - **Idempotent by Design:** You can safely run the script multiple times. It checks `Get-InboxRule` before creating, ensuring it will never duplicate your existing rules or folders.
 
