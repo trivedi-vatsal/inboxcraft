@@ -51,6 +51,115 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;700&display=swap" rel="stylesheet" />
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://inboxcraft.app/#software",
+          "name": "InboxCraft",
+          "url": "https://inboxcraft.app",
+          "description": "Stop manually creating Outlook rules. Paste your sender list and instantly generate a safe, private PowerShell script to automate your inbox organization in seconds.",
+          "applicationCategory": "BusinessApplication, UtilitiesApplication",
+          "operatingSystem": "Web browser (Generates Windows PowerShell scripts)",
+          "softwareVersion": "1.0.4",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "featureList": [
+            "Quick and Advanced rule generation modes",
+            "10+ pre-built YAML templates for popular services",
+            "COM + Exchange Online hybrid folder creation",
+            "100% Client-Side generation (Private and secure)",
+            "Live folder tree and syntax-highlighted preview"
+          ],
+          "creator": {
+            "@type": "Organization",
+            "name": "InboxCraft",
+            "url": "https://inboxcraft.app"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://inboxcraft.app/#website",
+          "name": "InboxCraft - Outlook Inbox Rules Generator",
+          "url": "https://inboxcraft.app",
+          "description": "Stop manually creating Outlook rules. Paste your sender list and instantly generate a safe, private PowerShell script to automate your inbox organization in seconds.",
+          "publisher": {
+            "@id": "https://inboxcraft.app/#organization"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://inboxcraft.app/#organization",
+          "name": "InboxCraft",
+          "url": "https://inboxcraft.app",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://inboxcraft.app/og-image.png"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://inboxcraft.app/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is it safe to run this script?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The generated snippet uses native ExchangeOnlineManagement and Outlook COM modules provided by Microsoft. It does not download or install any external software. The script simply automates the repetitive UI clicks you would normally do to create rules."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need admin rights?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Creating and managing your own inbox rules only requires standard user privileges to your own directory/mailbox."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I read the code before running it?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. Our built-in syntax highlighter lets you preview exactly what the PowerShell snippet will do before you copy it. You are encouraged to review it."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://inboxcraft.app/#howto",
+          "name": "How to automatically generate Outlook inbox rules",
+          "description": "Quickly create dozens of Outlook rules using a completely client-side PowerShell generator.",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Enter your emails",
+              "text": "Provide your Microsoft 365 email and the sender's email address."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Download Rules",
+              "text": "Click 'Download Rules' to immediately save your completely custom 'outlook-rules.ps1' PowerShell script."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Run the script",
+              "text": "Run the downloaded PowerShell `.ps1` snippet in Windows PowerShell on your local machine to automatically organize your inbox."
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="bg-white min-h-screen overflow-x-hidden">
     <div id="root"></div>

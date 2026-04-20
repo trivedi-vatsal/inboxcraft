@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { RiArrowRightUpLine, RiGithubLine } from '@remixicon/react'
 import logoSvg from '@/assets/logo.svg'
+import { version } from '../../package.json'
 
 const navigation = {
   tool: [
@@ -171,7 +172,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="hover:text-[#533afd] transition-colors"
             >
-              v1.0.4
+              v{version}
             </a>
             {' · '}
             <a

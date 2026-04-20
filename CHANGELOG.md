@@ -1,5 +1,17 @@
 # inboxcraft
 
+## 1.0.6 - Apr 20, 2026
+
+### Patch Changes
+
+- Made the Footer version number dynamic internally by automatically importing the version string directly from package.json.
+
+## 1.0.5 - Apr 20, 2026
+
+### Patch Changes
+
+- Added rich JSON-LD schema markup (WebApplication, FAQPage, HowTo) for improved SEO and rich search results.
+
 ## 1.0.4 - Apr 2, 2026
 
 ### Minor Changes
