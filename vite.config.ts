@@ -1,5 +1,6 @@
 import { defineConfig, loadEnv, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
+import Sitemap from 'vite-plugin-sitemap'
 import { parse as parseYaml } from 'yaml'
 import path from 'path'
 
@@ -18,7 +19,19 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   return {
     base: '/',
-    plugins: [react(), yamlPlugin()],
+    plugins: [
+      react(), 
+      yamlPlugin(),
+      Sitemap({
+        hostname: 'https://inboxcraft.app',
+        dynamicRoutes: [
+          '/', '/advanced', '/templates', '/privacy', '/changelog',
+          '/guides/how-to-create-outlook-rules',
+          '/guides/outlook-rules-examples',
+          '/guides/outlook-365-vs-outlook-web-inbox-rules'
+        ]
+      })
+    ],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),

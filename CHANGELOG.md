@@ -1,5 +1,14 @@
 # inboxcraft
 
+## 1.2.0 - Apr 20, 2026
+
+### Minor Changes
+
+- - **Content SEO Engine** — Implemented a standalone `/guides/*` markdown rendering engine powered by `react-markdown` and `@tailwindcss/typography`.
+  - **Informational Guides** — Released three new SEO-focused informational routing fixtures targeting high-value organic search terms: "How to Create Rules", "Outlook Examples", and "Outlook 365 vs Web".
+  - **Sitemap Automation** — Introduced `vite-plugin-sitemap` to statically generate indexable XML sitemaps encompassing all dynamically defined routes on build.
+  - **Recipe JSON-LD** — Injected automatically derived `Recipe` schema outputs mapping to markdown frontmatter for aggressive Google rich-carousel indexing on guides.
+
 ## 1.1.0 - Apr 20, 2026
 
 ### Minor Changes

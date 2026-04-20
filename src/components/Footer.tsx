@@ -11,6 +11,11 @@ const navigation = {
     { name: 'Privacy Policy',to: '/privacy',    external: false },
     { name: 'Changelog',     to: '/changelog',  external: false },
   ],
+  guides: [
+    { name: 'How to create rules',     to: '/guides/how-to-create-outlook-rules',  external: false },
+    { name: '15+ Outlook Examples',     to: '/guides/outlook-rules-examples',  external: false },
+    { name: 'Outlook 365 vs Web',     to: '/guides/outlook-365-vs-outlook-web-inbox-rules',  external: false },
+  ],
   resources: [
     { name: 'Documentation',   href: 'https://github.com/trivedi-vatsal/InboxCraft#readme', external: true },
     { name: 'Contributing',    href: 'https://github.com/trivedi-vatsal/InboxCraft/blob/main/CONTRIBUTING.md', external: true },
@@ -70,7 +75,7 @@ export function Footer() {
           </div>
 
           {/* Link columns */}
-          <div className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:mt-0">
+          <div className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4 xl:mt-0">
 
             {/* Tool */}
             <div>
@@ -82,6 +87,29 @@ export function Footer() {
               </h3>
               <ul className="mt-5 space-y-3.5">
                 {navigation.tool.map(({ name, to }) => (
+                  <li key={to} className="w-fit">
+                    <Link
+                      to={to}
+                      className="flex items-center text-[13px] font-[300] text-[#64748d] dark:text-slate-400 hover:text-[#533afd] dark:hover:text-slate-100 transition-colors"
+                      style={{ fontFeatureSettings: '"ss01"' }}
+                    >
+                      {name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Guides */}
+            <div>
+              <h3
+                className="text-[13px] font-[400] text-[#061b31] dark:text-slate-100"
+                style={{ fontFeatureSettings: '"ss01"' }}
+              >
+                Guides
+              </h3>
+              <ul className="mt-5 space-y-3.5">
+                {navigation.guides.map(({ name, to }) => (
                   <li key={to} className="w-fit">
                     <Link
                       to={to}

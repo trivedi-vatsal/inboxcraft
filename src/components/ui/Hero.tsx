@@ -25,7 +25,7 @@ export function Hero() {
         </div>
 
         {/* Headline */}
-        <h1
+        <h2
           className="max-w-4xl text-[3rem] sm:text-[3.5rem] md:text-[3.5rem] font-[300] text-[#061b31] dark:text-slate-50 leading-[1.10] animate-slide-up-fade"
           style={{
             letterSpacing: '-0.96px',
@@ -34,8 +34,8 @@ export function Hero() {
           }}
         >
           Stop sorting emails manually.
-        </h1>
-        <h2
+        </h2>
+        <h1
           className="mt-3 text-[1.63rem] sm:text-[2rem] font-[300] text-[#273951] dark:text-slate-300 leading-[1.12] animate-slide-up-fade"
           style={{
             letterSpacing: '-0.64px',
@@ -44,7 +44,7 @@ export function Hero() {
           }}
         >
           Automate your Outlook inbox rules.
-        </h2>
+        </h1>
 
         {/* Sub-headline */}
         <p

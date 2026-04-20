@@ -11,6 +11,7 @@ const AdvancedPage      = lazy(() => import('./pages/AdvancedPage').then(m => ({
 const TemplatesPage     = lazy(() => import('./pages/TemplatesPage').then(m => ({ default: m.TemplatesPage })))
 const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage').then(m => ({ default: m.PrivacyPolicyPage })))
 const ChangelogPage     = lazy(() => import('./pages/ChangelogPage').then(m => ({ default: m.ChangelogPage })))
+const GuidePage         = lazy(() => import('./pages/GuidePage').then(m => ({ default: m.GuidePage })))
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -42,6 +43,7 @@ export default function App() {
             <Route path="/templates" element={<TemplatesPage />} />
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="/changelog" element={<ChangelogPage />} />
+            <Route path="/guides/:slug" element={<GuidePage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
         </Suspense>
